@@ -1,0 +1,357 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 14, 2016, 3:15:06 PM
+    Author     : Nguyen Euler
+*/
+*{
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+html { background-color:whitesmoke; }
+/* ---CSS---for----header---*/
+header{
+height: 81px;
+background: white;
+}
+#left-logo{
+    width: 34.76%;
+    margin: 0;
+    padding:0;
+    float: left;
+    height:76px;
+    border-bottom: 5px solid red;
+}
+header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    
+}
+#home
+{
+    float :left;
+    width: 7%;
+    margin-top: 40px;
+    padding-left: 20px;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-right: 1px solid black;
+    height: 36px;
+}
+#home:hover
+{
+    border-bottom-color: orange;
+}
+#ctdt
+{
+    float :left;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-right: 1px solid black;
+    height: 76px;
+    width: 12.89% ;
+    position :relative;
+}
+#ctdt ul
+{
+    display:none;
+    position: absolute;
+    top: 0%;
+}
+#ctdt:hover > ul
+{
+    display: block;
+    
+}
+#dk
+{
+    float :left;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-right: 1px solid black;
+    height: 76px;
+    width: 8.12%;
+   
+}
+#job
+{
+    float :left;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-right: 1px solid black;
+    height: 76px;
+    width: 6.25%;
+    
+}
+#viettech
+{
+    float :left;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-right: 1px solid black;
+    height: 76px;
+    width: 6.64%;
+    
+}
+#contact
+{
+    float :left;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-right: 1px solid black;
+    height: 76px;
+    width: 5.62%;
+    
+}
+#blog
+{
+    float :left;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-right: 1px solid black;
+    height: 76px;
+    width: 4.45%;
+    
+}
+#search
+{
+    
+    background-color: white;
+    border-bottom: 5px solid red;
+    height: 76px;
+ 
+}
+
+header h1
+{
+    font-size: 90px;
+    text-align: center;
+}
+/*-------------------------------*/
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+
+nav{
+    height: 249px;
+}
+nav img 
+{
+    margin-left: 12%;
+}
+main{
+    border-top: 3px solid red;
+    margin: 0; 
+    
+}
+#first
+{
+    background-color: rgb(202,52,56);
+    height: 400px;
+}
+#registry 
+{
+   
+    margin-bottom: 5px;margin-top: 5px;margin-left: 10%; margin-right: 5px;
+    width: 300px;
+    height: 350px;
+    float: left;
+    border-bottom: 1px dashed gold;
+    border-top : 1px dashed gold;
+    border-left: 1px dashed gold;
+    border-right: 1px dashed gold;
+}
+#registry h2{
+    text-transform: uppercase;
+    text-align:center;
+    border-bottom: 2px dashed gold;
+}
+#form-reg
+{
+    margin-left: 70px;
+}
+#registry .multi-choice{
+    margin-left: 70px;}
+#registry .outside {
+    margin-left: 70px;}
+#registry p {
+    margin-left: 70px;
+}
+#extra{
+    background-color: orange;
+    color: white;
+    padding: 13px 28px;
+    text-align: center;
+    display: inline-block;
+    font-size: 12px;
+}
+#extra:hover {
+  border: none;
+  background: orange;
+  box-shadow: 0px 0px 1px #777;
+ }
+#course 
+{
+    
+    float: left;
+    width: 800px;
+    height: 350px;
+    margin-bottom: 5px; margin-top: 5px;margin-left: 10px;
+    border-bottom: 1px dashed gold;
+    border-top : 1px dashed gold;
+    border-left: 1px dashed gold;
+    border-right: 1px dashed gold;
+}
+#course h2
+{
+    text-transform: uppercase;
+    text-align: center;
+    border-bottom: 2px dashed gold;
+}
+#course .course1
+{
+    float:left;
+    margin-left:15px;
+    margin-top: 5px;
+    text-align: center;
+}
+#course .course1 img
+{
+     border-radius: 50%;
+}
+#course .course2{
+    float:left;
+    margin-left: 30px;
+    margin-top:  5px;
+    text-align:  center;
+}
+#course .course2 img
+{
+     border-radius: 50%;
+}
+#course .course3{
+    float:left;
+    margin-left: 30px;
+    margin-top: 5px;
+    text-align: center;
+}
+#course .course3 img
+{
+     border-radius: 50%;
+}
+#course .course4{
+    float:left;
+    margin-left:30px;
+    margin-top: 5px;
+    text-align: center;
+}
+#course .course4 img
+{
+     border-radius: 50%;
+}
+#introduction{
+    height: 300px;
+    clear: left;
+    border-top: 3px solid red;
+    padding-bottom: 2em;
+    border-bottom: 3px solid red;
+}
+#introduction img{
+       border-radius: 50%;
+       float:left;
+       margin-top:2%;
+       margin-left:12%;
+       margin-right:10px;
+}
+#intro-text
+{
+    margin-top: 30px;
+    margin-left: 40%;
+    margin-right: 300px;
+}
+#second
+{
+ height: 300px;
+ border-bottom: 3px solid red;   
+ background-color: rgb(202,52,56);
+}
+#schedule
+{
+    float:left;
+    margin-top:2%;
+    margin-left:20px;
+    margin-right:10px;
+    width: 400px;
+}
+#schedule h2
+{
+    margin-left: 20px;
+}
+#noteboard
+{
+    float:left;
+    margin-top:2%;
+    margin-left:60px;
+    border-left: 1px solid black;
+    height: 200px;
+    width: 800px;
+}
+#noteboard h2
+{
+     margin-left: 60px;
+}
+#third{
+    height: 300px;
+    border-bottom: 3px solid red;
+}
+#news 
+{
+    float:left;
+    margin-top:2%;
+    margin-left:20px;
+    margin-right:10px;
+    width: 400px;
+    
+}
+#news p
+{
+    margin-left: 30px;
+}
+#placementnews 
+{
+    background-color: bisque;
+    float:left;
+    margin-top:2%;
+    margin-left:60px;
+    border-left: 1px solid black;
+    width: 800px;
+}
+#placementnews p
+{
+    margin-left: 60px;
+}
+#placementnews ul
+{
+    margin-left: 60px;
+}
+/*------footer---------*/
+footer {background: #aaa;color:white;}
