@@ -12,11 +12,20 @@ and open the template in the editor.
          <meta name="keywords" content="Lập trình viên, Lập trình Java, Lập trình .Net, Lập trình Web, PHP, MySQL, Lập trình di động, Android, iOS, mobile, tester, Kiểm thử phần mềm, thiết kế phần mềm, kỹ sư cầu nối, da nang, đà nẵng, học lập trình tại đà nẵng, hoc lap trinh tai da nang, nơi tốt nhất học lập trình tại đà nẵng, trung tâm đào tạo lập trình tại đà nẵng, đào tạo lập trình viên tại đà nẵng, việc làm CNTT tại đà nẵng, dạy lập trình tại đà nẵng" >
          <link rel="shortcut icon" href="pictures/favicon.ico" >
          <link rel="stylesheet" href="style/main.css">
+         <!-- Scripts creating menu when resizing the viewport-->
+         <link rel="stylesheet" href="styles/slicknav.css">
+    	 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    	 <script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	 $(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    	</script>
     </head>
     <body>
         <header>
             <div id="left-logo">
-                <img src="pictures/favicon.png" alt="logo" height="76" > 
+                <img src="pictures/favicon.png" alt="logo" height="76"> 
             </div>
             <ul>
                 <li id="home"><a href="http://iviettech.vn/">Trang chủ</a></li>
@@ -38,8 +47,10 @@ and open the template in the editor.
                 <li id="viettech"><a href="#">iViettech</a></li>
                 <li id="contact"><a href="#">Liên hệ</a></li>
                 <li id="blog"><a href="#">Blog</a></li>
-                <li id="search"><img src="pictures/search.png" alt="search" height="76"></li>
             </ul>
+            <div id="right-logo">
+                <img src="pictures/search.png" alt="search" height="76"> 
+            </div>
         </header>
         <nav>
             <img src="pictures/banner.png" alt="ads"> 
@@ -47,10 +58,15 @@ and open the template in the editor.
         <main>
         <section id="first">
             <div id="registry">
+                <img id="reg-icon" src="pictures/reg_icon.png" alt="reg-icon">
                 <h2 style="color:whitesmoke"> đăng ký học </h2>
-                <div id="form-reg">
-                     <input type="text" name="ho-va-ten" placeholder="Họ và tên">
+              
+                <input id="form-reg1" type="text" name="ho-va-ten" placeholder="Họ và tên">
+       
+                <div id="form-reg2">     
                      <input type="text" name="email" placeholder="Email">
+                </div>
+                <div id="form-reg3">
                      <input type="text" name="phone" placeholder="Điện thoại">
                 </div>
                      <select class="multi-choice" name="Chọn lớp học" form="classform">
@@ -59,7 +75,7 @@ and open the template in the editor.
                         <option value="LTJV">Lập trình Java A-Z</option>
                         <option value="LTCN">Lập trình chuyên nghiệp</option>
                     </select>
-                     <input class="outside" type="text" name="loi-nhan-cua-ban" placeholder="Lời nhắn của bạn">
+                     <textarea id="message">Lời nhắn của bạn</textarea>
                      <p> <input id="extra" type="submit" value="ĐĂNG KÝ HỌC"></p>
                 
             </div>
