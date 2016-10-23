@@ -48,14 +48,12 @@ and open the template in the editor.
                 <li id="viettech"><a href="#">iViettech</a></li>
                 <li id="contact"><a href="#">Liên hệ</a></li>
                 <li id="blog"><a href="#">Blog</a></li>
+                <li id="right-logo"> <p><img src="pictures/search.png" alt="search" height="76"> </p> <li>
             </ul>
-            </div>
-            <div id="right-logo">
-                <img src="pictures/search.png" alt="search" height="76"> 
             </div>
         </header>
         <nav>
-            <img src="pictures/banner.png" alt="ads"> 
+            <img src="pictures/banner.gif" alt="ads"> 
         </nav>
         <main>
         <section id="first">
@@ -63,23 +61,20 @@ and open the template in the editor.
                 <img id="reg-icon" src="pictures/reg_icon.png" alt="reg-icon">
                 <h2 style="color:whitesmoke"> đăng ký học </h2>
               
-                <input id="form-reg1" type="text" name="ho-va-ten" placeholder="Họ và tên">
-       
-                <div id="form-reg2">     
-                     <input type="text" name="email" placeholder="Email">
-                </div>
-                <div id="form-reg3">
-                     <input type="text" name="phone" placeholder="Điện thoại">
-                </div>
-                     <select class="multi-choice" name="Chọn lớp học" form="classform">
+                <form name="reg" action="reg.php" method="post">
+                    <input id="form-reg1" type="text" name="ho-va-ten" placeholder="Họ và tên">
+                    <input id="form-reg2" type="text" name="email" placeholder="Email">
+                    <input id="form-reg3" type="text" name="phone" placeholder="Điện thoại">
+                    <select class="multi-choice" name="Chọn lớp học" form="classform">
+                        <option value="CTH" selected>Chọn chương trình học</option>
                         <option value="LTiOS">Lập trình iOS</option>
                         <option value="LTAnd">Lập trình Android</option>
                         <option value="LTJV">Lập trình Java A-Z</option>
                         <option value="LTCN">Lập trình chuyên nghiệp</option>
                     </select>
-                     <textarea id="message">Lời nhắn của bạn</textarea>
-                     <p> <input id="extra" type="submit" value="ĐĂNG KÝ HỌC"></p>
-                
+                    <textarea id="message">Lời nhắn của bạn</textarea>
+                    <p> <input id="extra" type="submit" value="đăng ký học"></p>
+                </form>
             </div>
             <div id="course">
                 <h2 style="color:whitesmoke"> chương trình đào tạo </h2>
