@@ -63,6 +63,23 @@ background: white;
 #navigation ul li {
 	float: left;
 }
+#navigation ul ul li {
+    
+    display: block;
+    padding: 0.5em 0;
+    background-color: white;
+    border-bottom: 1px solid red;
+    text-decoration: none;
+}
+#navigation ul ul li a{
+    
+    display:block;
+    margin-right: 10px;
+    
+}
+#navigation ul ul li:hover {
+ 
+}
 #home,#ctdt,#dk,#job,#viettech,#contact,#blog
 {
     
@@ -130,6 +147,7 @@ background: white;
 /*-----------------------------*/
 #right-logo
 {  
+    float: right;
     max-width: 14.27%;
     background-color: white;
     border-bottom: 5px solid red;
