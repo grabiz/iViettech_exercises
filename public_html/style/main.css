@@ -53,15 +53,19 @@ background: white;
     margin-left: 180px;
     max-width: 247px;
 }
-header ul {
-    list-style-type: none;
+#navigation ul{
+    list-style: none;
+    position: relative; 
     margin: 0;
     padding: 0;
     
 }
+#navigation ul li {
+	float: left;
+}
 #home,#ctdt,#dk,#job,#viettech,#contact,#blog
 {
-    float :left;
+    
     margin-top: 40px;
     background-color: white;
     border-bottom: 5px solid red;
@@ -79,23 +83,29 @@ header ul {
 {
     border-bottom-color: orange;
 }
+#navigation ul ul {
+	display: none;         /* Don't display submenu until hover of the li element */
+	position: absolute;
+	top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+#navigation ul ul li {
+	float: none;           /* Display the submenus vertically */
+}
+
+#navigation > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
 #ctdt
 {
     width: 12.89% ;
-    position :relative;
 }
-#ctdt ul
-{
-    display:none;
-    position: absolute;
-    background-color: white;
-   
+#navigation ul li:hover > ul {
+	display: block;        /* Display the submenu on hover of the li element */
 }
-#ctdt:hover > ul
-{
-    display: block;
-    
-}
+
+
 #dk
 {
     width: 8.12%;
@@ -116,6 +126,8 @@ header ul {
 {
     width: 4.45%;
 }
+
+/*-----------------------------*/
 #right-logo
 {  
     max-width: 14.27%;
