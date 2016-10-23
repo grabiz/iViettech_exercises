@@ -1,0 +1,273 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 23, 2016, 1:21:10 PM
+    Author     : Nguyen Euler
+*/
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 14, 2016, 3:15:06 PM
+    Author     : Nguyen Euler
+*/
+*{
+    margin:0;
+    padding:0;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+/*-------------CSS-for----links-------*/
+a{
+    text-decoration: none;
+    margin-left: 15px;
+    
+}
+a:link{
+    color: black;
+}
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: red;
+}
+
+a:active {
+    text-decoration: underline;
+}
+/*---------------------------*/
+html { background-color:whitesmoke; }
+/* ---CSS---for----header---*/
+header{
+max-width : 100%;
+height: 81px;
+background: white;
+}
+#left-logo{
+    width: 34.76%; 
+    margin: 0;
+    padding:0;
+    float: left;
+    height:76px;
+    border-bottom: 5px solid red;
+}
+#left-logo img{
+    margin-left: 180px;
+    max-width: 247px;
+}
+#nav_menu ul{
+    list-style: none;
+    position: relative; 
+    margin: 0;
+    padding: 0;
+    
+}
+#nav_menu ul li {
+	float: left;
+}
+#nav_menu ul ul li {
+    
+    display: block;
+    padding: 0.5em 0;
+    background-color: white;
+    border-bottom: 1px solid red;
+    text-decoration: none;
+}
+#nav_menu ul ul li a{
+    
+    display:block;
+    margin-right: 10px;
+    
+}
+#nav_menu ul ul li:hover {
+ 
+}
+#home,#ctdt,#dk,#job,#viettech,#contact,#blog
+{
+    
+    margin-top: 40px;
+    background-color: white;
+    border-bottom: 5px solid red;
+    border-right: 1px solid black;
+    height: 36px;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#home
+{
+    width: 7%;
+}
+#home:hover,#ctdt:hover,#dk:hover,#job:hover,#viettech:hover,#contact:hover,#blog:hover
+{
+    border-bottom-color: orange;
+}
+#nav_menu ul ul {
+	display: none;         /* Don't display submenu until hover of the li element */
+	position: absolute;
+	top: 100%;             /* Position the submenu at the bottom of the main menu */
+}
+#nav_menu ul ul li {
+	float: none;           /* Display the submenus vertically */
+}
+
+#nav_menu > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#ctdt
+{
+    width: 12.89% ;
+}
+#nav_menu ul li:hover > ul {
+	display: block;        /* Display the submenu on hover of the li element */
+}
+
+
+#dk
+{
+    width: 8.12%;
+}
+#job
+{
+    width: 6.25%;
+}
+#viettech
+{
+    width: 6.64%;
+}
+#contact
+{
+    width: 5.62%;
+}
+#blog
+{
+    width: 4.45%;
+}
+
+/*-----------------------------*/
+#right-logo
+{  
+    max-width: 14.27%;
+    background-color: white;
+    border-bottom: 5px solid red;
+    height: 76px;
+    overflow: hidden;
+}
+#right-logo img
+{
+    max-width: 100%;
+}
+
+#header>ul::after
+{
+    content:"";
+    display:block;
+    clear:both;
+    
+}
+header h1
+{
+    font-size: 90px;
+    text-align: center;
+}
+/*-------------------------------*/
+
+
+/*---------------------*/
+main{
+    margin: 0; 
+    padding:0;
+}
+/*---------CSS-for---registry and course-----------*/
+#first
+{
+    background-color: rgb(202,52,56);
+    width: 100%;
+}
+/*---------------registry form-------------*/
+#registry 
+{
+   
+    margin-top: 20px; margin-left: 11.09%;margin-right: 25px;
+    width: 18.28%;
+    border-bottom: 1px dashed gold;
+    border-top : 1px dashed gold;
+    border-left: 1px dashed gold;
+    border-right: 1px dashed gold;
+    border-radius: 2px;
+}
+#reg-icon
+{
+    display: block;
+    float:left;
+    margin-left: 10px;
+    margin-top: 15px;
+    width: 100%;
+    max-width:41px; 
+}
+
+#registry h2{
+    text-transform: uppercase;
+    text-align:center;
+    padding-top: 15px;
+    padding-bottom: 22px;
+    border-bottom: 1px dashed gold;
+}
+form
+{
+    margin :0;
+    padding:0;
+}
+#form-reg1
+{
+    margin-top: 13px;
+    margin-left: 10px;
+    margin-bottom: 9px;
+    height:28px;
+    width: 211px;
+}
+#form-reg2,#form-reg3,#registry .multi-choice
+{
+    margin-left: 10px;
+    margin-bottom: 9px;
+    height:28px;
+    width: 211px;
+}
+#message {
+    margin-left: 10px;
+    height:50px; 
+    width: 211px;
+    margin-bottom: 9px;
+}
+
+#extra{
+    background-color: orange;
+    color: white;
+    margin-left: 10px;
+    padding: 5px 28px;
+    text-align: center;
+    display: inline-block;
+    height:36px; 
+    width: 211px;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#extra:hover {
+  border: none;
+  background: orange;
+  box-shadow: 0px 0px 1px #777;
+ }
+ 
+
+/*------footer---------*/
+footer {background: #aaa;color:white;}
