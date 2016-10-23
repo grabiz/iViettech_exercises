@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+         <title>iViettech - Trung tâm đào tạo Lập trình viên chuyên nghiệp | Java | .Net | Android |iOS |PHP |Tester </title>
+         <meta charset="UTF-8" >
+         <meta name="description" content="Trung tâm đào tạo Lập trình viên chuyên nghiệp iViettech với sứ mệnh là cầu nối giữa nhà trường và doanh nghiệp. Mục tiêu chính của iViettech là giúp các bạn trẻ yêu thích CNTT tìm kiếm việc làm trong ngành phần mềm.">
+         <meta name="keywords" content="Lập trình viên, Lập trình Java, Lập trình .Net, Lập trình Web, PHP, MySQL, Lập trình di động, Android, iOS, mobile, tester, Kiểm thử phần mềm, thiết kế phần mềm, kỹ sư cầu nối, da nang, đà nẵng, học lập trình tại đà nẵng, hoc lap trinh tai da nang, nơi tốt nhất học lập trình tại đà nẵng, trung tâm đào tạo lập trình tại đà nẵng, đào tạo lập trình viên tại đà nẵng, việc làm CNTT tại đà nẵng, dạy lập trình tại đà nẵng" >
+         <link rel="shortcut icon" href="pictures/favicon.ico" >
+         <link rel="stylesheet" href="style/main2.css">
+         <!-- Scripts creating menu when resizing the viewport-->
+         <link rel="stylesheet" href="styles/slicknav.css">
+    	 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    	 <script src="js/jquery.slicknav.min.js"></script>
+		<script type="text/javascript">
+    	 $(document).ready(function(){
+			$('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    	});
+    	</script>
+    </head>
+    <body>
+        <header>
+            <div id="left-logo">
+                <img src="pictures/favicon.png" alt="logo" height="76"> 
+            </div>
+            <div id="navigation">
+            <ul>
+                <li id="home"><a href="http://iviettech.vn/">Trang chủ</a></li>
+                <li id="ctdt"><a href="#">Chương trình đào tạo</a>
+                    <ul>
+                        <li><a href="#">Lập trình cơ bản</a></li>
+                        <li><a href="#">Lập trình Android</a></li>
+                        <li><a href="#">Lập trình iOS-Swift</a></li>
+                        <li><a href="#">Lập Trình PHP &#038; MySQL</a></li>
+                        <li><a href="#">Lập trình viên chuyên nghiệp</a></li>
+                        <li><a href="#">Kiểm thử phần mềm</a></li>
+                        <li><a href="#">Lập trình iOS-Swift</a></li>
+                        <li><a href="#">Lập trình iOS-Swift</a></li>
+                    </ul>
+                
+                </li>
+                <li id="dk"><a href="#">Đăng ký học</a></li>
+                <li id="job"><a href="#">Việc làm</a></li>
+                <li id="viettech"><a href="#">iViettech</a></li>
+                <li id="contact"><a href="#">Liên hệ</a></li>
+                <li id="blog"><a href="#">Blog</a></li>
+                <li id="right-logo"> <p><img src="pictures/search.png" alt="search" height="76"> </p> <li>
+            </ul>
+            </div>
+        </header>
+        <main>
+        <section id="first">
+            <div id="registry">
+                <img id="reg-icon" src="pictures/reg_icon.png" alt="reg-icon">
+                <h2 style="color:whitesmoke"> đăng ký học </h2>
+              
+                <form name="reg" action="reg.php" method="post">
+                    <input id="form-reg1" type="text" name="ho-va-ten" placeholder="Họ và tên">
+                    <input id="form-reg2" type="text" name="email" placeholder="Email">
+                    <input id="form-reg3" type="text" name="phone" placeholder="Điện thoại">
+                    <select class="multi-choice" name="Chọn lớp học" form="classform">
+                        <option value="CTH" selected>Chọn chương trình học</option>
+                        <option value="LTiOS">Lập trình iOS</option>
+                        <option value="LTAnd">Lập trình Android</option>
+                        <option value="LTJV">Lập trình Java A-Z</option>
+                        <option value="LTCN">Lập trình chuyên nghiệp</option>
+                    </select>
+                    <textarea id="message">Lời nhắn của bạn</textarea>
+                    <p> <input id="extra" type="submit" value="đăng ký học"></p>
+                </form>
+            </div>
+           
+        </main>
+        <footer>
+             <p><strong>Địa chỉ :</strong> 92 Quang Trung, Q. Hải Châu, TP. Đà Nẵng - <strong>Điện thoại :</strong> 05113 888 279</p>						
+             <p><strong>Email :</strong>  <a href="mailto:contact@iviettech.vn">contact@iviettech.vn</a></p>
+             <p style="margin-left: 77%">Bản quyền thuộc về <a href="http://iviettech.vn">iViettech</a></p>
+      
+        </footer>
+    </body>
+</html>
+
+
