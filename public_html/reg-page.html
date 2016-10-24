@@ -11,7 +11,7 @@ and open the template in the editor.
          <meta name="description" content="Trung tâm đào tạo Lập trình viên chuyên nghiệp iViettech với sứ mệnh là cầu nối giữa nhà trường và doanh nghiệp. Mục tiêu chính của iViettech là giúp các bạn trẻ yêu thích CNTT tìm kiếm việc làm trong ngành phần mềm.">
          <meta name="keywords" content="Lập trình viên, Lập trình Java, Lập trình .Net, Lập trình Web, PHP, MySQL, Lập trình di động, Android, iOS, mobile, tester, Kiểm thử phần mềm, thiết kế phần mềm, kỹ sư cầu nối, da nang, đà nẵng, học lập trình tại đà nẵng, hoc lap trinh tai da nang, nơi tốt nhất học lập trình tại đà nẵng, trung tâm đào tạo lập trình tại đà nẵng, đào tạo lập trình viên tại đà nẵng, việc làm CNTT tại đà nẵng, dạy lập trình tại đà nẵng" >
          <link rel="shortcut icon" href="pictures/favicon.ico" >
-         <link rel="stylesheet" href="style/main2.css">
+         <link rel="stylesheet" href="styles/main2.css">
          <!-- Scripts creating menu when resizing the viewport-->
          <link rel="stylesheet" href="styles/slicknav.css">
     	 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
@@ -25,8 +25,9 @@ and open the template in the editor.
     <body>
         <header>
             <div id="left-logo">
-                <img src="pictures/favicon.png" alt="logo" height="76"> 
+                <img src="pictures/favicon.png" alt="logo"> 
             </div>
+            <nav id="mobilemenu"></nav>
             <div id="nav_menu">
             <ul>
                 <li id="home"><a href="http://iviettech.vn/">Trang chủ</a></li>
@@ -53,33 +54,42 @@ and open the template in the editor.
             </div>
         </header>
         <main>
-        <section id="first">
-            <div id="registry">
-                <img id="reg-icon" src="pictures/reg_icon.png" alt="reg-icon">
-                <h2 style="color:whitesmoke"> đăng ký học </h2>
-              
-                <form name="reg" action="reg.php" method="post">
-                    <input id="form-reg1" type="text" name="ho-va-ten" placeholder="Họ và tên">
-                    <input id="form-reg2" type="text" name="email" placeholder="Email">
-                    <input id="form-reg3" type="text" name="phone" placeholder="Điện thoại">
-                    <select class="multi-choice" name="Chọn lớp học" form="classform">
+		    
+			<div id="left-image">
+			    <img src="pictures/support.jpg" alt="supporter">
+			</div>
+		    <div id= "title">
+			    <img src="pictures/reg_icon.png" alt="reg_icon">
+				<h2> đăng ký khóa học </h2>
+			</div>
+			
+            <form id="form" name="course-register" action="reg.php" method="post">
+			     <label for="hovaten"> Họ và tên <span><sup>*</sup></span></label>
+				 <input type="text" name="hovaten" id="hovaten" required autofocus><br>
+				 <label for="email"> Email <span><sup>*</sup></span></label>
+				 <input type="email" name="email" id="email" required><br>
+				 <label for="phone">Điện thoại<span><sup>*</sup></span></label>
+				 <input type="tel" name="phone" id="phone" required><br>
+				 <label for="multi-choice">Chương trình học<span><sup>*</sup></span></label>
+				 <select id="multi-choice" name="Chọn lớp học">
                         <option value="CTH" selected>Chọn chương trình học</option>
                         <option value="LTiOS">Lập trình iOS</option>
                         <option value="LTAnd">Lập trình Android</option>
                         <option value="LTJV">Lập trình Java A-Z</option>
                         <option value="LTCN">Lập trình chuyên nghiệp</option>
-                    </select>
-                    <textarea id="message">Lời nhắn của bạn</textarea>
-                    <p> <input id="extra" type="submit" value="đăng ký học"></p>
-                </form>
-            </div>
-           
+                    </select><br>
+				 <label for="hovaten">Nội dung<span><sup>*</sup></span></label>
+				 <textarea id="message"></textarea><br>
+				<button type="submit" name="send-reg" id="send-reg"> đăng ký </button>
+            </form> 
+			 
+			<p id="end-line">Bạn đăng ký, chúng tôi sẽ gọi lại cho bạn</p>
+			 
         </main>
         <footer>
              <p><strong>Địa chỉ :</strong> 92 Quang Trung, Q. Hải Châu, TP. Đà Nẵng - <strong>Điện thoại :</strong> 05113 888 279</p>						
              <p><strong>Email :</strong>  <a href="mailto:contact@iviettech.vn">contact@iviettech.vn</a></p>
              <p style="margin-left: 77%">Bản quyền thuộc về <a href="http://iviettech.vn">iViettech</a></p>
-      
         </footer>
     </body>
 </html>
