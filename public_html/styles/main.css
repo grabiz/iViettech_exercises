@@ -43,6 +43,7 @@ background: white;
 }
 #left-logo{
     width: 34.76%; 
+    min-width: 200px; 
     margin: 0;
     padding:0;
     float: left;
@@ -50,8 +51,9 @@ background: white;
     border-bottom: 5px solid red;
 }
 #left-logo img{
-    margin-left: 180px;
-    max-width: 247px;
+    width: 100%;
+    max-width:445px;
+    min-width: 200px; 
 }
 #mobilemenu{
     display:none;
@@ -368,29 +370,38 @@ form
 
 /*---------------CSS for introduction-----------------*/
 #introduction{
-    height: 300px;
+    width: 100%;
     clear: left;
     border-top: 3px solid red;
     padding-bottom: 2em;
     border-bottom: 3px solid red;
-    
+    overflow: hidden;  
 }
 #introduction img{
        border-radius: 50%;
        float:left;
        margin-top:2%;
        margin-left:8%;
-       margin-right:10px;
+       margin-right: 5%;
+}
+#button{
+    margin-top: 10px;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    width: 100px;
+    border-radius: 2px;
 }
 #intro-text
 {
+    float: left;
     margin-top: 30px;
-    margin-left: 30%;
     width: 20%;
-    
+    margin-right: 5%;
 }
 #tvideo{
-    float:right;
+    margin-top: 20px;
+    float:left;
     display: block;
 }
 #introduction::after
@@ -466,3 +477,7 @@ form
 }
 /*------footer---------*/
 footer {background: #aaa;color:white;}
+footer a:link
+{
+    color:white;
+}
