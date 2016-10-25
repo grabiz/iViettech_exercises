@@ -197,9 +197,24 @@ header h1
 /*---------------------*/
 main{
  
- width: 95%;
+ width:100%;
  overflow: hidden;
  
+}
+#right-image
+{
+
+float: right;
+margin-right: 10%;
+margin-top: 36px;
+border: 1px solid red;
+height: 352px;
+width: 20%;
+}
+#right-image img
+{
+    padding: 25px 50px;
+    border-radius: 50%;	
 }
 #title
 {
@@ -224,14 +239,7 @@ color: red;
 text-transform:uppercase;
 
 }
-#left-image
-{
-float: right;
-margin-top: 36px;
-border: 1px solid red;
-height: 352px;
-width: 22.1%;
-}
+
 #form
 {
 width: 53.12%;
