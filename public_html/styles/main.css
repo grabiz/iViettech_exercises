@@ -249,19 +249,22 @@ form
     margin-left: 10px;
     margin-bottom: 9px;
     height:28px;
-    width: 211px;
+    max-width: 211px;
+    width: 85.57%;
 }
 #form-reg2,#form-reg3,#registry .multi-choice
 {
     margin-left: 10px;
     margin-bottom: 9px;
     height:28px;
-    width: 211px;
+    max-width: 211px;
+    width: 85.57%;
 }
 #message {
     margin-left: 10px;
     height:50px; 
-    width: 211px;
+    max-width: 211px;
+    width: 85.57%;
     margin-bottom: 9px;
 }
 
@@ -273,7 +276,8 @@ form
     text-align: center;
     display: inline-block;
     height:36px; 
-    width: 211px;
+    max-width: 211px;
+    width: 85.57%;
     font-size: 14px;
     text-transform: uppercase;
 }
@@ -295,6 +299,7 @@ form
     border-left: 1px dashed gold;
     border-right: 1px dashed gold;
     border-radius: 1px;
+    overflow: hidden;
 }
 #course-icon
 {
@@ -314,58 +319,32 @@ form
     padding-bottom: 22px;
     border-bottom: 1px dashed gold;
 }
-#course .course1
+.course1,.course2,.course3,.course4
 {
     max-width: 160px;
+    width: 21.77%;
     float:left;
     margin-left:15px;
-    margin-top: 87px;
+    margin-top: 42px;
     text-align: center;
 }
-#course .course1 img
+.course1 img,.course2 img,.course3 img,.course4 img 
 {
+    max-width: 115px;
+    width: 71.875%;
     border-radius: 50%;
 }
-#course .course2{
-    max-width: 160px;
-    float:left;
-    margin-left: 15px;
-    margin-top:  87px;
-    text-align:  center;
-}
-#course .course2 img
-{
-     border-radius: 50%;
-}
-#course .course3{
-    max-width: 160px;
-    float:left;
-    margin-left: 15px;
-    margin-top: 87px;
-    text-align: center;
-}
-#course .course3 img
-{
-     border-radius: 50%;
-}
-#course .course4{
-    max-width: 160px;
-    float:left;
-    margin-left:15px;
-    margin-top: 87px;
-    text-align: center;
-}
-#course .course4 img
-{
-     border-radius: 50%;
-}
-#course h3
+
+#course a
 {
     font-size: 18px;
+    color: white;
 }
 #course p
 {
-    font-size: 10px;
+    font-size: 13px;
+    color: white;
+    text-align: center;
 }
 
 /*---------------CSS for introduction-----------------*/
@@ -412,7 +391,7 @@ form
 /*-------------Announcements------------*/
 #second
 {
- height: 300px;
+ height: 360px;
  border-bottom: 3px solid red;   
  background-color: rgb(202,52,56);
 }
@@ -420,26 +399,51 @@ form
 {
     float:left;
     margin-top:2%;
-    margin-left:20px;
+    margin-left: 140px;
     margin-right:10px;
-    width: 400px;
+    width: 660px;
+    
+}
+#schedule-title,#noterboard-title
+{
+    overflow: hidden;
+    border-bottom: 1px dashed red;
+}
+#schedule img
+{
+    float:left;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    max-width: 41px;
 }
 #schedule h2
 {
-    margin-left: 20px;
+    margin-left: 50px;
+    color: white;
 }
 #noteboard
 {
     float:left;
     margin-top:2%;
-    margin-left:60px;
-    border-left: 1px solid black;
-    height: 200px;
-    width: 800px;
+    margin-left:33px;
+    border: 1px dashed white;
+    height: 315px;
+    width: 315px;
+}
+
+#noteboard img
+{
+    float:left;
+    margin-left: 3px;
+    margin-bottom: 3px;
+    width: 100%;
+    max-width: 41px;
 }
 #noteboard h2
 {
      margin-left: 60px;
+     color: white;
 }
 #third{
     height: 300px;
