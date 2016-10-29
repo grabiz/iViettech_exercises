@@ -13,6 +13,7 @@ and open the template in the editor.
          <link rel="shortcut icon" href="pictures/favicon.ico" >
          <link rel="stylesheet" href="styles/main.css">
          <!-- Scripts creating menu when resizing the viewport-->
+         <meta name="viewport" content="width=device-width,initial-scale=1.0">
          <link rel="stylesheet" href="styles/slicknav.css">
     	 <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     	 <script src="js/jquery.slicknav.min.js"></script>
@@ -30,26 +31,25 @@ and open the template in the editor.
             <nav id="mobilemenu"></nav>
             <div id="nav_menu">
             <ul>
-                <li id="home"><a href="http://iviettech.vn/">Trang chủ</a></li>
-                <li id="ctdt"><a href="#">Chương trình đào tạo</a>
+                <li id="home" class="text-header"><a href="home.html">Trang chủ</a></li>
+                <li id="ctdt" class="text-header"><a href="#">Chương trình đào tạo</a>
                     <ul>
-                        <li><a href="#">Lập trình cơ bản</a></li>
-                        <li><a href="#">Lập trình Android</a></li>
-                        <li><a href="#">Lập trình iOS-Swift</a></li>
-                        <li><a href="#">Lập Trình PHP &#038; MySQL</a></li>
-                        <li><a href="#">Lập trình viên chuyên nghiệp</a></li>
-                        <li><a href="#">Kiểm thử phần mềm</a></li>
-                        <li><a href="#">Lập trình iOS-Swift</a></li>
-                        <li><a href="#">Lập trình iOS-Swift</a></li>
+                        <li><a href="#" class="text-header">Lập trình cơ bản</a></li>
+                        <li><a href="#" class="text-header">Lập trình Android</a></li>
+                        <li><a href="#" class="text-header">Lập trình iOS-Swift</a></li>
+                        <li><a href="#" class="text-header">Lập Trình PHP &#038; MySQL</a></li>
+                        <li><a href="#" class="text-header">Lập trình viên chuyên nghiệp</a></li>
+                        <li><a href="#" class="text-header">Kiểm thử phần mềm</a></li>
+                        <li><a href="#" class="text-header">Lập trình iOS-Swift</a></li>
+                        <li><a href="#" class="text-header">Lập trình iOS-Swift</a></li>
                     </ul>
                 
                 </li>
-                <li id="dk"><a href="reg-page.html">Đăng ký học</a></li>
-                <li id="job"><a href="#">Việc làm</a></li>
-                <li id="viettech"><a href="#">iViettech</a></li>
-                <li id="contact"><a href="#">Liên hệ</a></li>
-                <li id="blog"><a href="#">Blog</a></li>
-                <li id="right-logo"> <p><img src="pictures/search.png" alt="search" height="76"> </p> <li>
+                <li id="dk" class="text-header"><a href="reg-page.html">Đăng ký học</a></li>
+                <li id="job" class="text-header"><a href="#">Việc làm</a></li>
+                <li id="viettech" class="text-header"><a href="#">iViettech</a></li>
+                <li id="contact" class="text-header"><a href="#">Liên hệ</a></li>
+                <li id="blog" class="text-header"><a href="#">Blog</a></li>
             </ul>
             </div>
         </header>
@@ -60,7 +60,7 @@ and open the template in the editor.
         <section id="first">
             <div id="registry">
                 <img id="reg-icon" src="pictures/reg_icon.png" alt="reg-icon">
-                <h2 style="color:whitesmoke"> đăng ký học </h2>
+                <h2> đăng ký học </h2>
               
                 <form name="reg" action="reg.php" method="post">
                     <input id="form-reg1" type="text" name="ho-va-ten" placeholder="Họ và tên">
@@ -79,7 +79,7 @@ and open the template in the editor.
             </div>
             <div id="course">
                 <img id="course-icon" src="pictures/course_icon.png" alt="course-icon">
-                <h2 style="color:whitesmoke"> chương trình đào tạo </h2>
+                <h2> chương trình đào tạo </h2>
                 <div class="course1">
                     <a href=""><img src="pictures/c_logo.png" title="Lập trình cơ bản" alt="Lập trình cơ bản"/></a> 
                     <h3><a href="http://iviettech.vn/chuong-trinh-dao-tao/5986-lap-trinh-co-ban.html">Lập trình cơ bản</a></h3><br><br><br>
@@ -107,61 +107,38 @@ and open the template in the editor.
             </div>
         </section>
         <section id="introduction">
-            <img src="pictures/img-intro.jpg" alt="intro">    
+		    <div id="intro-pic">
+                 <img src="pictures/img-intro.jpg" alt="intro"> 
+            </div>			
             <div id="intro-text">
-            <h2 style="text-transform:uppercase;color:orange;font-size: 40px;"> <strong> Giới Thiệu !</strong></h2>
+            <p class="text-intro1" style="text-transform:uppercase;color:orange;"> <strong> Giới Thiệu !</strong></p>
             <br>
-            <p style="text-justify: auto;">Trải qua nhiều năm làm việc trong ngành phần mềm, hiểu được thực trạng nhu cầu nhân lực của ngành, nhóm chuyên gia trong ngành đã thành lập Trung tâm đào tạo Lập trình viên chuyên nghiệp iVietTech với mong muốn thu hẹp khoảng cách giữa nhà trường và doanh nghiệp, tạo cơ hội việc làm cho các bạn trẻ đã, đang và sẽ theo học ngành CNTT.</p>
+            <p class="text-intro">Trải qua nhiều năm làm việc trong ngành phần mềm, hiểu được thực trạng nhu cầu nhân lực của ngành, nhóm chuyên gia trong ngành đã thành lập Trung tâm đào tạo Lập trình viên chuyên nghiệp iVietTech với mong muốn thu hẹp khoảng cách giữa nhà trường và doanh nghiệp, tạo cơ hội việc làm cho các bạn trẻ đã, đang và sẽ theo học ngành CNTT.</p>
             <button type="submit" name="readmore" id="button">Xem thêm </button>
             </div>
             <div id="tvideo">
-            <iframe  width="420" height="315" src="https://www.youtube.com/embed/6r7lZdxCg2w" frameborder="0" allowfullscreen></iframe>
+            <iframe src="https://www.youtube.com/embed/6r7lZdxCg2w" frameborder="0" allowfullscreen></iframe>
             </div>
         </section>
         <section id="second">
             <div id="schedule">
                 <div id="schedule-title">
                     <img src="pictures/kg_icon.png" alt="kg_icon">
-                    <h2>Lịch Khai Giảng</h2>
+                    <h2>LỊCH KHAI GIẢNG</h2>
                 </div>
             </div>
             <div id="noteboard">
                 <div id="noterboard-title">
                     <img src="pictures/tb_icon.png" alt="tb_icon">
-                <h2>Thông báo</h2>
+                <h2>THÔNG BÁO</h2>
                 </div>
                 </div>
         </section>
-        <section id="third">
-            <section id="news">
-            <p style="text-transform: capitalize;font-size: 20px; color: blue">tin tức sự kiện</p>
-            <p style="text-transform: capitalize;font-size: 15px;color: grey">tin tức chuyên ngành</p>
-            </section>
-            <section id="placementnews">
-                <p style="text-transform: capitalize;font-size: 20px; color: blue">tin tuyển dụng</p>
-                <p style="text-transform: capitalize;font-size: 15px;color: grey">việc tìm người- người tìm việc</p>
-                <ul> 
-                    <li>
-                         Công ty : Aperia Solutions (Vietnam)<br>
-                         <strong style="color:red;">Urgent! Technical Leader/senior .Net Engineer</strong>
-                         </li>
-                    <li>
-                         Công ty : Aperia Solutions (Vietnam)<br>
-                         <strong style="color:red;">Urgent! Technical Leader/senior .Net Engineer</strong>
-                         </li>
-                    <li>
-                         Công ty : Aperia Solutions (Vietnam)<br>
-                         <strong style="color:red;">Urgent! Technical Leader/senior .Net Engineer</strong>
-                         </li>
-                </ul>
-                
-            </section>
-        </section> 
         </main>
         <footer>
-             <p><strong>Địa chỉ :</strong> 92 Quang Trung, Q. Hải Châu, TP. Đà Nẵng - <strong>Điện thoại :</strong> 05113 888 279</p>						
-             <p><strong>Email :</strong>  <a href="mailto:contact@iviettech.vn">contact@iviettech.vn</a></p>
-             <p style="margin-left: 77%">Bản quyền thuộc về <a href="http://iviettech.vn">iViettech</a></p>
+             <p class="text-footer"><strong>Địa chỉ :</strong> 92 Quang Trung, Q. Hải Châu, TP. Đà Nẵng - <strong>Điện thoại :</strong> 05113 888 279</p>						
+             <p class="text-footer"><strong>Email :</strong>  <a href="mailto:contact@iviettech.vn">contact@iviettech.vn</a></p>
+             <p class="text-footer" style="margin-left: 77%">Bản quyền thuộc về <a href="http://iviettech.vn">iViettech</a></p>
       
         </footer>
     </body>
